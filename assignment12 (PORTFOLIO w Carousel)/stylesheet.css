@@ -90,7 +90,8 @@ main {
   grid-column: span 12;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /*splits images into 3 columns, cannot use on project-clicked pages*/
-  background-color: black;
+  background-color: #92A2A0; /* light grey color */
+  border: 1px solid black;
 }
 
 article {
@@ -120,8 +121,8 @@ article img {
 
 .image {
 	position: relative;
-	width: 400px;
-  border: 1px solid black;
+	width: 396px;
+  border: 2px solid black;
 }
 
 .image__img {

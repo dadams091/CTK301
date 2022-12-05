@@ -66,7 +66,7 @@ nav {
 
 #aboutmeid {
   margin-right: 8px;
-  color: white;
+  color: #C0BBFF;
 }
 
 #aboutmeid:hover {
@@ -77,113 +77,58 @@ header a {
   text-decoration: none;
 }
 
-#projecttitle {
-  grid-column: span 12;
-  text-align: center;
-  font-weight: normal;
-  font-size: 18px;
-  color: white;
-  /* border: 1px solid black; */
-  margin: 0;
-  padding: 45px 0;
-  background-color: #0C4646;
-  text-shadow: 2px 2px 2px #000;
-  border: 1px solid black;
-}
 
+
+
+/* ------------------main--------------------- */
 main {
   grid-column: span 12;
+  grid-template-columns: 1fr 2fr; /*splits images into 3 columns*/
   display: grid;
   background-color: #92A2A0; /* light grey color */
   border: 1px solid black;
-  /* width: 100%; */
 }
 
 
 /* block level element -> need width? */
-.img-container {
-  text-align: center;
+#personalinfoid {
   display: block;
   margin-top: 24px;
-  padding: 0;
-}
-
-#slingshotterimg {
-  border: 3px solid black;
+  margin-left: 36px;
 }
 
 /* use a different font */
-p {
-  text-align: center;
-  margin: 24px 48px;
-  font-style: normal;
+#personalinfoid p {
+    text-align: left;
+    border: 2px solid black;
+    background-color: white;
+    padding: 5px 0 5px 5px;
 }
 
-#moreprojectsid {
-  padding-left: 18px;
-  padding: 18px;
-  margin-bottom: 0;
-  /* opacity: 0.2; */
-
-  /* grid-column: span 12; */
-  font-weight: normal;
-  /* font-size: 18px; */
-  color: black;
-  /* border: 1px solid black; */
-  /* background-color: black; */
-  /* background: rgba(red, green, blue, 0.2); */
-  background: rgba(0, 0, 0, 0.2);
+#pfpimg {
+  border: 3px solid black;
+  display: block;
 }
 
-/* javascript */
-.carousel {
-  color: #170724;
-
-  --carousel-button-bg: #fff;
-  --carousel-button-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0
-          0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
-
-  --carousel-button-svg-width: 20px;
-  --carousel-button-svg-height: 20px;
-  --carousel-button-svg-stroke-width: 2.5;
+/* about me section */
+main h2 {
+  border-bottom: 1px solid black;
+  margin-right: 24px;
 }
 
-
-#projectCarousel .carousel__slide {
-  display: flex;  /* orignal display value */
-  /* display: block; */
-  align-items: center;
-  justify-content: center;
-  width: 33.1%; /* does something */
-  height: 350px; /* does something */
-  /* margin-right: 0px;  */
-  /* adjust this to add more slides?, orignally 6 */
-  /* background-color: red; */
-  padding: 0;
-  margin: 0;
-  /* overflow: hidden; */
-  /* border-radius: 6px; */
-  /* border: 10px solid red; */
+/* about me section */
+#aboutmeinfoid {
+  display: block;
+  text-align: left;
+  margin-right: 24px;
+  /* border: 1px solid red; */
 }
 
-#projectCarousel {
-  width: 1200px;
-  padding: 0;
-  margin: 0;
+.aboutmeclass {
+  border: 1px solid red;
 }
 
-.carousel__slide {
-  /* border: 10px solid red; */
-  /* text-align: center; */
-}
-
-.carousel__slide img {
-  height: 290px;
-  padding: 0;
-  margin: 0;
-  border: 5px solid black;
-}
-
+/* ------------------footer--------------------- */
 footer {
   grid-column: span 12;
   background-color: #085A4D;
